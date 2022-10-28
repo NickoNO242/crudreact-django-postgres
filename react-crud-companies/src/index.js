@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CompanyList from './components/Company/CompanyList';
 import "bootstrap/dist/css/bootstrap.min.css"
-import Navbar from './components/Navbar/Navbar';
+//import Navbar from './components/Navbar/Navbar';
 import CompanyForm from './components/Company/CompanyForm';
 import {Routes, Route,BrowserRouter} from 'react-router-dom'
 
@@ -16,6 +16,7 @@ root.render(
         <Routes>
           <Route exact path='/' element={<CompanyList />} />
           <Route path='/companyForm' element={<CompanyForm />} />
+          <Route path='/updateCompany/:id' element={<CompanyForm />} />
         </Routes>
       </div>
     </BrowserRouter>

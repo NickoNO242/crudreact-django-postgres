@@ -22,7 +22,7 @@ function CompanyList() {
         <Navbar />
         <div className="row">
         {companies.map((company) => (
-            <ComponentItem key={company.id} company={company}/>
+            <ComponentItem key={company.id} company={company} listCompanies={listCompanies}/>
         ))}
     </div>
       </div>
